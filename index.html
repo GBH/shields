@@ -220,7 +220,7 @@ function escapeField(s) {
   return s.replace(/-/g, '--').replace(/_/g, '__');
 }
 function makeImage() {
-  var url = '/badge/';
+  var url = 'http://img.shields.io/badge/';
   url += escapeField(imageMaker.subject.value);
   url += '-' + escapeField(imageMaker.status.value);
   url += '-' + escapeField(imageMaker.color.value);
